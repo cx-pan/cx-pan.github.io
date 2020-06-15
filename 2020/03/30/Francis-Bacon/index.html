@@ -96,19 +96,19 @@
             <ul id="menu-top" class="nav-top-items">
                 
                     <li class="menu-item">
-                        <a href="/categories/%E6%80%9D%E8%80%83%E7%9A%84%E6%97%A5%E5%B8%B8">
+                        <a href="/">
                             
                             
-                                Thinking
+                                Home
                             
                         </a>
                     </li>
                 
                     <li class="menu-item">
-                        <a href="/categories/%E9%98%85%E8%AF%BB">
+                        <a href="/categories">
                             
                             
-                                Reading
+                                Categories
                             
                         </a>
                     </li>
@@ -281,7 +281,25 @@
 <h2 id="58．论世道沧桑"><a href="#58．论世道沧桑" class="headerlink" title="58．论世道沧桑"></a>58．论世道沧桑</h2><blockquote>
 <p>所罗门说：“世上无新事。”对此，柏拉图也有着同样的观点：“一切知识都不过是回忆。”同样，所罗门也有类似的名言：“所有的新鲜事无非是过往被遗忘了的事而已。”由此可见，忘河之水，不仅流淌在地府，也会流淌在人间。</p>
 </blockquote>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
           
 

@@ -96,19 +96,19 @@
             <ul id="menu-top" class="nav-top-items">
                 
                     <li class="menu-item">
-                        <a href="/categories/%E6%80%9D%E8%80%83%E7%9A%84%E6%97%A5%E5%B8%B8">
+                        <a href="/">
                             
                             
-                                Thinking
+                                Home
                             
                         </a>
                     </li>
                 
                     <li class="menu-item">
-                        <a href="/categories/%E9%98%85%E8%AF%BB">
+                        <a href="/categories">
                             
                             
-                                Reading
+                                Categories
                             
                         </a>
                     </li>
@@ -157,7 +157,7 @@
 <li><a href="#2">Love and Life</a></li>
 <li><a href="#3">Language Empowerment</a></li>
 </ul>
-<p><font color=#1A4E66> <h1 id="1"> <strong>Identity, Race, and Culture</strong> </h1></font></p>
+<p><font color="#1A4E66"> </font></p><h1 id="1"><font color="#1A4E66"> <strong>Identity, Race, and Culture</strong> </font></h1><p></p>
 <blockquote>
 <p>For a long time I didn’t understand why so many black people had abandoned their indigenous faith for Christianity. But the more we went to church and the longer I sat in those pews the more I learned about how Christianity works: If you’re Native American and you pray to the wolves, you’re a savage. If you’re African and you pray to your ancestors, you’re a primitive. But when white people pray to a guy who turns water into wine, well, that’s just common sense. </p>
 </blockquote>
@@ -182,7 +182,7 @@
 <blockquote>
 <p>As a kid I understood that people were different colors, but in my head white and black and brown were like types of chocolate. Dad was the white chocolate, mom was the dark chocolate, and I was the milk chocolate. But we were all just chocolate. I didn’t know any of it had anything to do with “race. ” I didn’t know what race was. </p>
 </blockquote>
-<p><font color=#1A4E66> <h1 id="2"> <strong>Love and Life</strong> </h1></font></p>
+<p><font color="#1A4E66"> </font></p><h1 id="2"><font color="#1A4E66"> <strong>Love and Life</strong> </font></h1><p></p>
 <blockquote>
 <p>When it was time to pick my name, she chose Trevor, a name with no meaning whatsoever in South Africa, no precedent in my family. It’s not even a Biblical name. It’s just a name. My mother wanted her child beholden to no fate. She wanted me to be free to go anywhere, do anything, be anyone. </p>
 </blockquote>
@@ -219,7 +219,7 @@
 <blockquote>
 <p>I’d go to funerals and I’d walk in and the bereaved would look up and see me and they’d stop crying. They’d start whispering. Then they’d wave and say, “Oh!” like they were more shocked by me walking in than by the death of their loved ones. I think people felt like the dead person was more important because a white person had come to the funeral. </p>
 </blockquote>
-<p> <font color=#1A4E66><h1 id="1"><strong>Language Empowerment</strong></h1></font></p>
+<p> <font color="#1A4E66"></font></p><h1 id="1"><font color="#1A4E66"><strong>Language Empowerment</strong></font></h1><p></p>
 <blockquote>
 <p>When I was growing up we used to get American TV shows rebroadcast on our stations: Doogie Howser, M. D. ; Murder, She Wrote; Rescue 911 with William Shatner. Most of them were dubbed into African languages. ALF was in Afrikaans. Transformers was in Sotho. But if you wanted to watch them in English, the original American audio would be simulcast on the radio. You could mute your TV and listen to that. Watching those shows, I realized that whenever black people were on-screen speaking in African languages, they felt familiar to me. They sounded like they were supposed to sound. Then I’d listen to them in simulcast on the radio, and they would all have black American accents. My perception of them changed. They didn’t feel familiar. They felt like foreigners. </p>
 </blockquote>
@@ -235,7 +235,25 @@
 <blockquote>
 <p>That, and so many other smaller incidents in my life, made me realize that language, even more than color, defines who you are to people. </p>
 </blockquote>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
           
 

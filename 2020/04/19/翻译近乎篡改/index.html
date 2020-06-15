@@ -96,19 +96,19 @@
             <ul id="menu-top" class="nav-top-items">
                 
                     <li class="menu-item">
-                        <a href="/categories/%E6%80%9D%E8%80%83%E7%9A%84%E6%97%A5%E5%B8%B8">
+                        <a href="/">
                             
                             
-                                Thinking
+                                Home
                             
                         </a>
                     </li>
                 
                     <li class="menu-item">
-                        <a href="/categories/%E9%98%85%E8%AF%BB">
+                        <a href="/categories">
                             
                             
-                                Reading
+                                Categories
                             
                         </a>
                     </li>
@@ -161,7 +161,25 @@
 <p>这两天还接触到《道德经》英文版，我读到一句：True goodness is like water. Water’s good for everything. It doesn’t compete. 愣了许久才回过神来，原来指的是：上善若水，水善利万物而不争。这翻译得简直面目全非，韵味尽失，精髓不在。其实还有一种可能，我的英文水平并不高，不足以理解英语翻译的高明之处。再有一种可能是，英文版本更像是解释，不像翻译，读了直白的英文版反而明白了它的意思。</p>
 <p>但解释始终缺少韵味，跨文化交流的障碍就在于此，我们常常悟不出其他文化最精髓的东西。最近最让我震惊的是，大音希声，大象无形，这些都出自道德经，而北区学校的“大教无痕”简直对我来说不能更震撼，原来汲取了中华文化的精髓，触类旁通后悟出的在教育的定位，我对自己的无知感到惭愧。我明白一个事实，自己中文学得不好，许多稍微难一点的文章如红楼梦，还有古诗，文言文，很多都完全读不懂，真的很惭愧。</p>
 <p>对于《自由·平等·博爱》的英文版，我要对照着中文版才看得懂，虽然为了看懂一手资源要学好外语，基本信息获取是没问题了，但更深的学术著作真的不好理解。学无止境啊。</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
           
 

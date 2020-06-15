@@ -96,19 +96,19 @@
             <ul id="menu-top" class="nav-top-items">
                 
                     <li class="menu-item">
-                        <a href="/categories/%E6%80%9D%E8%80%83%E7%9A%84%E6%97%A5%E5%B8%B8">
+                        <a href="/">
                             
                             
-                                Thinking
+                                Home
                             
                         </a>
                     </li>
                 
                     <li class="menu-item">
-                        <a href="/categories/%E9%98%85%E8%AF%BB">
+                        <a href="/categories">
                             
                             
-                                Reading
+                                Categories
                             
                         </a>
                     </li>
@@ -157,7 +157,25 @@
 <p>以前觉得用英文装b，现在想想，只不过是因为惯性罢了。动词，形容词，和一些名词用英文，无可厚非。但要是把 I，you，and，这些词用在中文句子里，那确实有点怪异了。</p>
 <p>不过谈话也要看对象，和一些有英语使用习惯的朋友谈话，无论中英都无所谓。但对于英文并不好不太说的朋友，自己要把中英模式切换回中文模式，照顾别人的感受。</p>
 <p>我看到一个视频，是一位女大学生问马云，遇到最大的challenge是什么，又是如何overcome这种challenge的。当时马云没有正面回答这个问题，但告诉女生要明白自己的根并了解自己国家的文化。听完后我觉得马云说得很对，不过如果仅仅是日常表达里出现英文词，应该没什么问题吧，如果女生无意识用了些英文词，无可厚非，不过呢，正如我说的，语言中夹杂英文词，虽不是自己有意为之，但听者不一定适应你这样的表达方式。最好的方式是，尽量做到中文和英文自由切换。</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
           
 
